@@ -1,0 +1,59 @@
+/*clearfix :start*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+/*clearfix: end*/
+
+
+/*GROUPING*/
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+.row {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/****GRID COLUMN SETUP****/
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+.col:last-child { margin-left: 0; } 
+	
+   /* grid style :start */
+[class*="span-"] {
+    width: 100%;
+  }
+
+/*GRID OF TWELVE : start*/
+@media only screen and (min-width: 480px) {
+.col { 
+        margin: 1% 0 1% 0;
+	}
+.span-1-of-3 {
+        width: 32.26%; 
+    }    
+
+/*GRID OF three:end */
+/*GRID OF two :start */
+    
+.span-1-of-2 {
+        width: 50%;
+    }    
+
+/*GRID OF two:end */
+   /* grid style : end */
+}
