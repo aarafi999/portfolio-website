@@ -1,0 +1,36 @@
+#logo-section {
+    width: 100%;
+}
+
+#logo-sub-div {
+    width: 90%;
+    margin: auto;
+    padding-left: 5.4rem;
+}
+
+.logo-img img {
+    width: 90%;
+    height: 30rem;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.logo-img img:hover {
+    transform: scale(0.9);
+}
+@media screen and (min-width :240px) {
+    #logo-sub-div {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width :480px) {
+    .logo-img img {
+        height: 20rem;
+    }
+}
+@media screen and (min-width :1024px) {
+    #header {
+        padding-bottom: 5rem;
+    }
+}
